@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Insurance Simulator Regression Suite">
+
+	<listeners>
+
+		<listener class-name="com.insurance.qa.listeners.AnnotationTransformer" /> 
+		<listener class-name="com.insurance.qa.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="Insurance Simulator Test" parallel = "tests" thread-count = "2" verbose = "4">
+	
+		<parameter name="browser" value="chrome" />
+		
+	<groups>
+
+         <define name = "all">
+            <include name = "Functional"/>
+            <include name = "Regression"/>
+         </define>
+
+         <run>
+            <include name = "all"/>
+         </run>
+
+      </groups>
+		
+		<classes>
+
+			<class name="com.insurance.qa.testcases.HomePageTest" />
+
+		</classes>
+	</test>
+</suite> 
