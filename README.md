@@ -33,10 +33,12 @@ The project is created with:
 
 ## Setup
 This repository can be cloned to your local machine using the following commands:
-```
-HTTPS: https://github.com/tavleenkour/SampleFramework.git
-GitHub CLI: gh repo clone tavleenkour/SampleFramework
-```
+* HTTPS: 
+``` https://github.com/tavleenkour/SampleFramework.git ``` 
+
+* GitHub CLI:
+```  gh repo clone tavleenkour/SampleFramework ``` 
+
 
 ## Launch
 To run this project:
