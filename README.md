@@ -1,6 +1,6 @@
 # Sample Selenium Webdriver Framework.
 
-#### This is a sample automation framework to display best practices for selenium webdriver using Java programming language.
+#### This is a sample framework to display best practices for test automation using selenium webdriver in Java programming language.
 
 ## Table of Content
 * [Introduction](#introduction)
