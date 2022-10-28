@@ -14,21 +14,19 @@ import com.qa.insurance.base.TestBase;
 public class ScreenshotUtil extends TestBase 
 
 {
-	static int i = 1;
-	
+	static int i =1; 
 	// ****** Utility to capture a screenshot. ********
 	public static String takeScreenshotAtEndOfTest() throws IOException 
 	{   
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		String path = currentDir + "/screenshots/" + "Screenshot_" + i + ".png";
+		String path = currentDir + "/screenshots/" + "FailedTest_" + i + ".png";
 		
-		// ******* We can also use current date/time as suffix for screenshots names. *******
-	   // String path = currentDir + "/screenshots/" + System.currentTimeMillis() + ".png";
-	    
-	    i++;
-		FileUtils.copyFile(scrFile, new File(path));
+		// ******** We can also use current time to name screenshots ********
+	   //	String path = currentDir + "/screenshots/" + System.currentTimeMillis() + ".png";
 
+		FileUtils.copyFile(scrFile, new File(path));
+		i++;
 		return path;
 	}
 

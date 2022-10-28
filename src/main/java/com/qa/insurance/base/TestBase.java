@@ -61,4 +61,12 @@ public class TestBase {
 	
   }
 	
+	public static void pageRefresh()
+	
+	{
+		driver.navigate().refresh();
+	}
+	
+	
+	
 }

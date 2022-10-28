@@ -54,6 +54,8 @@ public class ExtentReportListener implements ITestListener
 			extent.attachReporter(htmlReporter);
 			extent.setReportUsesManualConfiguration(true);
 
+
+
 			return extent;
 		}
 
@@ -87,26 +89,38 @@ public class ExtentReportListener implements ITestListener
 		public synchronized void onTestSuccess(ITestResult result) 
 		{
 			
-			test.get().pass("Test passed");
+			test.get().pass(result.getName() + "Test is passed");
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 		}
 
 		public synchronized void onTestFailure(ITestResult result) 
 		{
 			
-			try {
+			test.get().fail(result.getName() + "Test is failed");
+			test.get().fail(result.getThrowable());
+
+			
+		try {
 				
 				// ******** Capturing screenshots for failed tests. ********
 				test.get().fail(result.getThrowable(),
 						MediaEntityBuilder.createScreenCaptureFromPath(ScreenshotUtil.takeScreenshotAtEndOfTest()).build()); 
-			} catch (IOException e) {
+			} 
+			catch (IOException e) 
+			{
 				System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
 			}
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+			
+			
+						
 		}
 
 		public synchronized void onTestSkipped(ITestResult result) 
 		{
+			
+			test.get().skip(result.getName() + "Test is skipped");
+
 			
 			try {
 				

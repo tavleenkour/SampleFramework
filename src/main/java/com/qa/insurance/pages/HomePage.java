@@ -15,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.qa.insurance.base.TestBase;
 import com.qa.insurance.util.CalenderUtil;
 
-
 // ******** Separate classes are created for each page in Page Object Model ********
 public class HomePage extends TestBase 
 
@@ -70,7 +69,7 @@ public class HomePage extends TestBase
 		
 		@FindBy(xpath="//*[@id=\"fee\"]")
 		WebElement fee;
-		
+				
 		
 		public HomePage() 
 		{
@@ -89,15 +88,17 @@ public class HomePage extends TestBase
 		public boolean validateSimulateCTA()
 		
 		{
+			
 			return simulateCTA.isDisplayed();
 		}
+		
 		
 		
 		public boolean getInfo(String carName, String carModel, String fuelType, String newCar, String firstUse, String name, String licenseIssue, String zipcode, String bonus, String comprehensive , String thirdParty)
 	
 		{
-			driver.navigate().refresh();
-			
+			pageRefresh();
+						
 			select = new Select(c_brand);
 			select.selectByVisibleText(carName);
 			
@@ -116,9 +117,8 @@ public class HomePage extends TestBase
 				sb.deleteCharAt(sb.length()-1);	
 				i++;
 			} 
-
-		  
-		   if(boolNewCar == true)
+			
+			if(boolNewCar == true)
 			{
 			  
 			  wait.until(ExpectedConditions.visibilityOf(first_use));
@@ -130,6 +130,7 @@ public class HomePage extends TestBase
 				first_use.clear();
 				first_use.sendKeys(String.valueOf(sb));
 			}
+
 			
 		    user_name.clear();
 		    user_name.sendKeys(name);
@@ -178,6 +179,7 @@ public class HomePage extends TestBase
 			}
 		
 			simulateCTA.click();
+
 			return fee.isDisplayed();
 		
 		}

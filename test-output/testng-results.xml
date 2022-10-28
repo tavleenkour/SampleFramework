@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="50" passed="48" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-27T23:24:47 EDT" name="Insurance Simulator Regression Suite" finished-at="2022-10-27T23:25:48 EDT" duration-ms="60572">
+  <suite started-at="2022-10-28T18:08:26 EDT" name="Insurance Simulator Regression Suite" finished-at="2022-10-28T18:09:46 EDT" duration-ms="80258">
     <groups>
       <group name="Functional">
-        <method signature="HomePageTest.validateHomePageTitleTest()[pri:1, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" name="validateHomePageTitleTest" class="com.qa.insurance.testcases.HomePageTest"/>
+        <method signature="HomePageTest.validateHomePageTitleTest()[pri:1, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" name="validateHomePageTitleTest" class="com.qa.insurance.testcases.HomePageTest"/>
       </group> <!-- Functional -->
       <group name="Regression">
-        <method signature="HomePageTest.validateSimulateButton()[pri:2, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" name="validateSimulateButton" class="com.qa.insurance.testcases.HomePageTest"/>
-        <method signature="HomePageTest.checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" name="checkInsuranceValue" class="com.qa.insurance.testcases.HomePageTest"/>
+        <method signature="HomePageTest.validateSimulateButton()[pri:2, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" name="validateSimulateButton" class="com.qa.insurance.testcases.HomePageTest"/>
+        <method signature="HomePageTest.checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" name="checkInsuranceValue" class="com.qa.insurance.testcases.HomePageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-10-27T23:24:47 EDT" name="Insurance Simulator Test" finished-at="2022-10-27T23:25:48 EDT" duration-ms="60572">
+    <test started-at="2022-10-28T18:08:26 EDT" name="Insurance Simulator Test" finished-at="2022-10-28T18:09:46 EDT" duration-ms="80258">
       <class name="com.qa.insurance.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:40 EDT" name="setUp" finished-at="2022-10-27T23:24:47 EDT" duration-ms="7201" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:12 EDT" name="setUp" finished-at="2022-10-28T18:08:26 EDT" duration-ms="13753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateHomePageTitleTest()[pri:1, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:47 EDT" name="validateHomePageTitleTest" finished-at="2022-10-27T23:24:47 EDT" duration-ms="38" status="PASS">
+        <test-method signature="validateHomePageTitleTest()[pri:1, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:26 EDT" name="validateHomePageTitleTest" finished-at="2022-10-28T18:08:26 EDT" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageTitleTest -->
-        <test-method signature="validateSimulateButton()[pri:2, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:47 EDT" name="validateSimulateButton" finished-at="2022-10-27T23:24:47 EDT" duration-ms="218" status="PASS">
+        <test-method signature="validateSimulateButton()[pri:2, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:26 EDT" name="validateSimulateButton" finished-at="2022-10-28T18:08:28 EDT" duration-ms="1547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSimulateButton -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:48 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:24:54 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="5814" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:28 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:35 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="7003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:54 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:24:56 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1935" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:35 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:37 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:56 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:24:57 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1149" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:37 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:38 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1305" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:24:57 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:05 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="8184" status="FAIL">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:38 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:47 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="8460" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -273,22 +273,22 @@
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:6f82:ee82:aac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc]]>
+Command: [97a393866fd009ed2eac2dd538fef931, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:60056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60056/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97a393866fd009ed2eac2dd538fef931]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:6f82:ee82:aac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
+Command: [97a393866fd009ed2eac2dd538fef931, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:60056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60056/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97a393866fd009ed2eac2dd538fef931
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -308,8 +308,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
-at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:183)
+at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -331,7 +331,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:05 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:13 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="8012" status="FAIL">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:47 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:56 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="8519" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -395,22 +395,22 @@ at java.base/java.lang.Thread.run(Thread.java:833)
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:6f82:ee82:aac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc]]>
+Command: [97a393866fd009ed2eac2dd538fef931, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:60056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60056/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97a393866fd009ed2eac2dd538fef931]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:6f82:ee82:aac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
+Command: [97a393866fd009ed2eac2dd538fef931, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:60056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60056/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97a393866fd009ed2eac2dd538fef931
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -430,8 +430,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
-at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:183)
+at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -453,7 +453,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:14 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:15 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1021" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:56 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:57 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1492" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -514,7 +514,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:15 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:16 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="987" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:57 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:08:59 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,7 +575,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:16 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:17 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="900" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:08:59 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:00 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1141" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -636,7 +636,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:17 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:18 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="959" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:00 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:01 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -697,7 +697,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:18 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:18 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="802" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:01 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:02 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -758,7 +758,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:18 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:19 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="802" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:02 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:03 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -819,7 +819,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:19 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:20 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="828" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:03 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:05 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1257" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -880,7 +880,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:20 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:21 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="858" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:05 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:06 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -941,7 +941,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:21 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:22 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="857" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:06 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:07 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1002,7 +1002,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:22 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:23 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="878" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:07 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:08 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1063,7 +1063,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:23 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:23 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="813" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:08 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:09 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1124,7 +1124,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:23 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:24 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="826" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:09 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:10 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1185,7 +1185,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:24 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:25 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="803" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:10 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:11 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1246,7 +1246,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:25 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:26 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="774" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:11 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:13 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1307,7 +1307,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:26 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:27 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="804" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:13 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:14 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1368,7 +1368,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:27 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:27 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="803" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:14 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:15 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1429,7 +1429,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:27 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:28 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="758" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:15 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:16 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1063" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1490,7 +1490,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:28 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:29 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="759" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:16 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:17 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1050" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1551,7 +1551,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:29 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:30 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="755" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:17 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:19 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1612,7 +1612,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:30 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:30 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="801" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:19 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:21 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1673,7 +1673,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:30 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:31 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="797" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:21 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:22 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1734,7 +1734,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:31 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:32 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="747" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:22 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:23 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="897" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1795,7 +1795,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:32 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:33 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="749" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:23 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:24 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1856,7 +1856,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:33 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:34 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="726" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:24 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:25 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1917,7 +1917,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:34 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:34 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="782" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:25 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:26 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1978,7 +1978,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:34 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:35 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="699" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:26 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:27 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1078" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2039,7 +2039,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:35 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:36 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="717" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:27 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:28 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1016" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2100,7 +2100,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:36 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:36 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="727" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:28 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:29 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1049" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2161,7 +2161,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:36 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:37 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="784" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:29 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:30 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2222,7 +2222,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:37 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:38 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="721" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:30 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:31 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1047" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2283,7 +2283,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:38 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:39 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="715" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:31 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:33 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2344,7 +2344,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:39 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:39 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="723" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:33 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:34 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1158" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2405,7 +2405,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:39 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:40 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="787" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:34 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:35 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2466,7 +2466,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:40 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:41 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="762" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:35 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:36 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1026" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2527,7 +2527,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:41 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:42 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="797" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:36 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:37 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2588,7 +2588,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:42 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:42 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="720" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:37 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:38 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2649,7 +2649,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:42 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:43 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="754" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:38 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:40 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1714" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2710,7 +2710,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:43 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:44 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="730" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:40 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:41 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2771,7 +2771,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:44 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:45 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="733" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:41 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:42 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1637" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2832,7 +2832,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:45 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:45 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="727" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:42 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:44 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2893,7 +2893,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:45 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:46 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="740" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:44 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:45 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="1014" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2954,7 +2954,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:46 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:47 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="713" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:45 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:45 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="877" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3015,7 +3015,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:47 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-27T23:25:48 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="710" status="PASS">
+        <test-method signature="checkInsuranceValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:45 EDT" name="checkInsuranceValue" data-provider="getInsuranceTestData" finished-at="2022-10-28T18:09:46 EDT" depends-on-methods="com.qa.insurance.testcases.HomePageTest.validateSimulateButton" duration-ms="974" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3076,7 +3076,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInsuranceValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.insurance.testcases.HomePageTest@43015c69]" started-at="2022-10-27T23:25:48 EDT" name="tearDown" finished-at="2022-10-27T23:25:48 EDT" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.insurance.testcases.HomePageTest@13bc8645]" started-at="2022-10-28T18:09:47 EDT" name="tearDown" finished-at="2022-10-28T18:09:47 EDT" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

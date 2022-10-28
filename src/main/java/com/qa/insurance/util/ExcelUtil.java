@@ -50,7 +50,6 @@ public class ExcelUtil
 				for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) 
 				{					
 					data[i][j] = sheet.getRow(i + 1).getCell(j).toString();
-					System.out.println(data[i][j]);
 				}
 			}
 			return data;

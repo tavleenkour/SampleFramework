@@ -1,6 +1,5 @@
 package com.qa.insurance.testcases;
 
-
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -69,18 +68,20 @@ public class HomePageTest extends TestBase
 		return data;
 	}
 	
-	
-	// *********** Test Case 6 and Test Case 7 are getting failed intentionally by passing invalid data from excel file to check Failed State **********
+	// ******** Test case-4 and test case-5 from excel sheet are getting failed intentionally to display FAILED status in extent reports ******
 	@Test(priority=3, dataProvider="getInsuranceTestData", dependsOnMethods = { "validateSimulateButton" },groups= {"Regression"})
 	public void checkInsuranceValue(String carName, String carModel, String fuelType, String newCar, String firstUse, String name, 
 			String licenseIssue, String zipcode, String bonus, String comprehensive , String thirdParty)
 
 	{
-	
 		log.info("Check Insurance Value Test");
 		log.warn("This test is dependent on Validate Simulate Button Test");
 		Boolean annual_fee = homePage.getInfo(carName, carModel, fuelType, newCar, firstUse, name, licenseIssue, zipcode, bonus, comprehensive , thirdParty);
-		Assert.assertTrue(annual_fee);
+
+				Assert.assertTrue(annual_fee);		
+
+		
+		
 	}
 	
 	// ***** This method is only run once at the end of test suite. *****
