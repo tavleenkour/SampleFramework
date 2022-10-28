@@ -9,7 +9,7 @@
 		<listener class-name="com.qa.insurance.listeners.ExtentReportListener" />
 	</listeners>
 
-	<test name="Insurance Simulator Test" parallel = "methods" thread-count = "2" verbose = "2">
+	<test name="Insurance Simulator Test" parallel = "methods" thread-count = "2" verbose = "1">
 			
 	  <groups>
          <define name = "all">
