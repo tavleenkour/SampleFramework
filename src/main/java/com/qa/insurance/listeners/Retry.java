@@ -2,12 +2,19 @@ package com.qa.insurance.listeners;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class Retry implements IRetryAnalyzer {
+
+public class Retry implements IRetryAnalyzer 
+
+{
+	
 	private int count = 0;
 	private static int maxTry = 1;
 
+	// ****** Retry method to be called when a test case fails. ******
 	@Override
-	public boolean retry(ITestResult iTestResult) {
+	public boolean retry(ITestResult iTestResult) 
+	
+	{
 		
 		if (!iTestResult.isSuccess()) 
 		

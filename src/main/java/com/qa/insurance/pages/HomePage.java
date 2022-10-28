@@ -2,24 +2,24 @@ package com.qa.insurance.pages;
 
 
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.insurance.base.TestBase;
 import com.qa.insurance.util.CalenderUtil;
 
 
-
+// ******** Separate classes are created for each page in Page Object Model ********
 public class HomePage extends TestBase 
 
 { 
-	
-	
-	
 	Select select;
 	boolean boolNewCar;
 	boolean boolComprehensive;
@@ -27,11 +27,12 @@ public class HomePage extends TestBase
 	String inputFormat = "dd-MMMM-yyyy";
 	String outputFormat = "yyyyyy-MM-dd";	
 	StringBuilder sb;
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	int i;
 	
 	
+	// ******** Locators are stored using Page Factory ********
   	    @FindBy(xpath="//*[@id=\"simulateButton\"]")
-		@CacheLookup
 		WebElement simulateCTA;
 		
 		@FindBy(xpath="//*[@id=\"carBrand\"]")
@@ -70,7 +71,9 @@ public class HomePage extends TestBase
 		@FindBy(xpath="//*[@id=\"fee\"]")
 		WebElement fee;
 		
-		public HomePage() {
+		
+		public HomePage() 
+		{
 			
 			PageFactory.initElements(driver, this);
 		}	
@@ -82,98 +85,104 @@ public class HomePage extends TestBase
 			return driver.getTitle();
 		}
 		
-		public boolean getInfo(String carName, String carModel, String fuelType, String newCar, String firstUse, String name, String licenseIssue, String zipcode, String bonus, String comprehensive , String thirdParty)
-	
-		{
-			
-		
-		select = new Select(c_brand);
-		select.selectByVisibleText(carName);
-		
-		select = new Select(c_model);
-		select.selectByVisibleText(carModel);
-		
-		select = new Select(fuel_type);
-		select.selectByVisibleText(fuelType);
-		
-	  boolNewCar = Boolean.parseBoolean(newCar);
-	  
-	 i=1;
-	 sb = new StringBuilder(firstUse);
-		while(i < 3)
-		{
-			sb.deleteCharAt(sb.length()-1);	
-			i++;
-		} 
-	  
-	  
-	  if(boolNewCar == true)
-		{
-		  is_new.click();
-		}
-		else
-		{
-			first_use.clear();
-			first_use.sendKeys(String.valueOf(sb));
-		}
-		
-	  user_name.clear();
-	  user_name.sendKeys(name);
-		
-		((JavascriptExecutor)driver).executeScript("document.getElementById('licenseDate').removeAttribute('readonly',0);");
-		license_date.clear();
-		String formatted_date = CalenderUtil.Calender(inputFormat, outputFormat ,licenseIssue);
-		license_date.sendKeys(formatted_date);
-
-		i=1;
-		sb = new StringBuilder(zipcode);
-		while(i < 3)
-		{
-			sb.deleteCharAt(sb.length()-1);	
-			i++;
-		}
-		
-		zip_code.clear();
-		zip_code.sendKeys(sb);
-		
-	//	i=1;
-		sb = new StringBuilder(bonus);
-		while(i < 3)
-		{
-			sb.deleteCharAt(sb.length()-1);	
-			i++;
-			
-		}
-		
-		bonus_malus.clear();
-		bonus_malus.sendKeys(sb);
-		
-		boolComprehensive = Boolean.parseBoolean(comprehensive);
-		boolThirdParty = Boolean.parseBoolean(thirdParty);
-		
-		if(boolComprehensive == true)
-		{
-			compreh.click();	
-		}
-		else
-		{
-			if(boolThirdParty == true)
-			{
-				third_party.click();
-			}
-		}
-	
-		simulateCTA.click();
-		return fee.isDisplayed();
-		
-		}
-			
 		
 		public boolean validateSimulateCTA()
 		
 		{
 			return simulateCTA.isDisplayed();
 		}
+		
+		
+		public boolean getInfo(String carName, String carModel, String fuelType, String newCar, String firstUse, String name, String licenseIssue, String zipcode, String bonus, String comprehensive , String thirdParty)
+	
+		{
+			driver.navigate().refresh();
+			
+			select = new Select(c_brand);
+			select.selectByVisibleText(carName);
+			
+			select = new Select(c_model);
+			select.selectByVisibleText(carModel);
+			
+			select = new Select(fuel_type);
+			select.selectByVisibleText(fuelType);
+			
+		    boolNewCar = Boolean.parseBoolean(newCar);
+		  
+		    i=1;
+		    sb = new StringBuilder(firstUse);
+			while(i < 3)
+			{
+				sb.deleteCharAt(sb.length()-1);	
+				i++;
+			} 
+
+		  
+		   if(boolNewCar == true)
+			{
+			  
+			  wait.until(ExpectedConditions.visibilityOf(first_use));
+			  first_use.clear();
+			  is_new.click();
+			}
+			else
+			{
+				first_use.clear();
+				first_use.sendKeys(String.valueOf(sb));
+			}
+			
+		    user_name.clear();
+		    user_name.sendKeys(name);
+			
+			((JavascriptExecutor)driver).executeScript("document.getElementById('licenseDate').removeAttribute('readonly',0);");
+			license_date.clear();
+			String formatted_date = CalenderUtil.Calender(inputFormat, outputFormat ,licenseIssue);
+			license_date.sendKeys(formatted_date);
+	
+			i=1;
+			sb = new StringBuilder(zipcode);
+			while(i < 3)
+			{
+				sb.deleteCharAt(sb.length()-1);	
+				i++;
+			}
+			
+			zip_code.clear();
+			zip_code.sendKeys(sb);
+			
+			i=1;
+			sb = new StringBuilder(bonus);
+			while(i < 3)
+			{
+				sb.deleteCharAt(sb.length()-1);	
+				i++;
+				
+			}
+			
+			bonus_malus.clear();
+			bonus_malus.sendKeys(sb);
+			
+			boolComprehensive = Boolean.parseBoolean(comprehensive);
+			boolThirdParty = Boolean.parseBoolean(thirdParty);
+			
+			if(boolComprehensive == true)
+			{
+				compreh.click();	
+			}
+			else
+			{
+				if(boolThirdParty == true)
+				{
+					third_party.click();
+				}
+			}
+		
+			simulateCTA.click();
+			return fee.isDisplayed();
+		
+		}
+			
+
 		
 
 }

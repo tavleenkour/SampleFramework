@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.insurance.testcases.HomePageTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 0.73 s <<< FAILURE! - in com.qa.insurance.testcases.HomePageTest
+setUp(com.qa.insurance.testcases.HomePageTest)  Time elapsed: 0.415 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+	at com.qa.insurance.testcases.HomePageTest.setUp(HomePageTest.java:36)
+
+tearDown(com.qa.insurance.testcases.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "com.qa.insurance.testcases.HomePageTest.driver" is null
+	at com.qa.insurance.testcases.HomePageTest.tearDown(HomePageTest.java:86)
+
+setUp(com.qa.insurance.testcases.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+	at com.qa.insurance.testcases.HomePageTest.setUp(HomePageTest.java:36)
+
+tearDown(com.qa.insurance.testcases.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "com.qa.insurance.testcases.HomePageTest.driver" is null
+	at com.qa.insurance.testcases.HomePageTest.tearDown(HomePageTest.java:86)
+

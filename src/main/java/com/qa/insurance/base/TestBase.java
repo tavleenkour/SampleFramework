@@ -2,12 +2,9 @@ package com.qa.insurance.base;
 
 import java.io.FileInputStream;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-
 import com.qa.insurance.util.TestUtil;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -15,17 +12,14 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger log = Logger.getLogger(TestBase.class);
-
-
-
 	
+    // ******** Fetching config.properties file to extract configuration information ********
 	public TestBase()
 	{
-
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/insurance"
-					+ "/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/"
+					+ "/qa/insurance/config/config.properties");
 			prop.load(ip);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -36,10 +30,9 @@ public class TestBase {
 		
 		
 	
-	
+	// ****** To initialize browser *******
 	public static void initialization()
 	{
-
 		
 		String browserName = prop.getProperty("browser");
 		
@@ -47,10 +40,12 @@ public class TestBase {
 		{
 			driver = WebDriverManager.chromedriver().create();
 		}
+		
 		else if(browserName.equals("Firefox"))
 		{
 			driver = WebDriverManager.firefoxdriver().create();
 		}
+		
 		else if(browserName.equals("Edge"))
 		{
 			driver = WebDriverManager.edgedriver().create();
@@ -62,7 +57,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT);
 		driver.get(prop.getProperty("url"));
-		
+
 	
   }
 	

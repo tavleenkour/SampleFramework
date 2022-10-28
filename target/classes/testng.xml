@@ -4,33 +4,28 @@
 <suite name="Insurance Simulator Regression Suite">
 
 	<listeners>
-
-		<listener class-name="com.insurance.qa.listeners.AnnotationTransformer" /> 
-		<listener class-name="com.insurance.qa.listeners.ExtentReportListener" />
-
+		<!--  ******** We can use Retry Listner to retry the failed testcases using IRetryAnalyzer and IAnnotationTransformer interfaces ******* >
+		<listener class-name="com.qa.insurance.listeners.AnnotationTransformer" /> --> 
+		<listener class-name="com.qa.insurance.listeners.ExtentReportListener" />
 	</listeners>
 
-	<test name="Insurance Simulator Test" parallel = "tests" thread-count = "2" verbose = "4">
-	
-		<parameter name="browser" value="chrome" />
-		
-	<groups>
-
+	<test name="Insurance Simulator Test" parallel = "methods" thread-count = "2" verbose = "1">
+			
+	  <groups>
          <define name = "all">
             <include name = "Functional"/>
             <include name = "Regression"/>
          </define>
-
+         
          <run>
             <include name = "all"/>
          </run>
-
       </groups>
 		
-		<classes>
-
-			<class name="com.insurance.qa.testcases.HomePageTest" />
-
-		</classes>
+	  <classes>
+		<class name="com.qa.insurance.testcases.HomePageTest" />
+	  </classes>
+		
 	</test>
+	
 </suite> 

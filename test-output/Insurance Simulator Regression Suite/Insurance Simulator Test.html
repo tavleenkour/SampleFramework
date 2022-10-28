@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Insurance Simulator Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>48/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 27 15:23:01 EDT 2022</td>
+<td>Started on:</td><td>Thu Oct 27 23:24:47 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139095 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60572 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>all Functional Regression </td>
 </tr><tr>
@@ -75,21 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1800.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1800.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [845d42b8a831ac73c31ef3e4ccd68698, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53282/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 845d42b8a831ac73c31ef3e4ccd68698
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -103,47 +98,22 @@ Session ID: 845d42b8a831ac73c31ef3e4ccd68698
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1797648156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1797648156'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1764046854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1764046854'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [845d42b8a831ac73c31ef3e4ccd68698, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53282/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 845d42b8a831ac73c31ef3e4ccd68698
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -162,56 +132,38 @@ Session ID: 845d42b8a831ac73c31ef3e4ccd68698
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>15</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>8</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1870.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1870.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066a107d676b905becbadbbe787b5f38, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 066a107d676b905becbadbbe787b5f38
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -225,47 +177,22 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1880741401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1880741401'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896121472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace896121472'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
   (Session info: chrome=107.0.5304.62)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066a107d676b905becbadbbe787b5f38, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 066a107d676b905becbadbbe787b5f38
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -284,40 +211,27 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>16</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>8</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -327,282 +241,245 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 2014.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 2012.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
 <td></td>
-<td>6</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>5</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 2013.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
 <td></td>
-<td>6</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>1</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 2014.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
 <td></td>
-<td>6</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>1</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.validateHomePageTitleTest()'><b>validateHomePageTitleTest</b><br>Test class: com.insurance.qa.testcases.HomePageTest</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1970.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>1</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
 <td></td>
 <td>0</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.validateSimulateButton()'><b>validateSimulateButton</b><br>Test class: com.insurance.qa.testcases.HomePageTest</td>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
 <td></td>
 <td>0</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1800.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c03bf65d31a724644d4102c41d426d5, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53252/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c03bf65d31a724644d4102c41d426d5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1163216403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1163216403'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c03bf65d31a724644d4102c41d426d5, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53252/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c03bf65d31a724644d4102c41d426d5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>16</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 <tr>
-<td title='com.insurance.qa.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.insurance.qa.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, FALSE, 1870.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [13ed81d851613028d97ddfe36b651895, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13ed81d851613028d97ddfe36b651895
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace223363383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace223363383'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;fee&quot;]&quot;}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;Tavleens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4b:2dac:128e:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [13ed81d851613028d97ddfe36b651895, findElement {using=xpath, value=//*[@id=&quot;fee&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13ed81d851613028d97ddfe36b651895
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>15</td>
-<td>com.insurance.qa.testcases.HomePageTest@3336e6b6</td></tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2012.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2013.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2014.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2015.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2016.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, FALSE, 2017.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class A, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2012.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2013.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2014.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2015.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2016.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, FALSE, 2017.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Petrol, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2012.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2013.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2014.0, Tavleen Kour, 22-Nov-2006, 10004.0, 2.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2015.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2016.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, FALSE, 2017.0, Tavleen Kour, 08-Apr-2002, 10010.0, 5.0, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 10-Jan-2010, 12001.0, 0.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.checkInsuranceValue()'><b>checkInsuranceValue</b><br>Test class: com.qa.insurance.testcases.HomePageTest<br>Parameters: Mercedes Benz, Class B, Diesel, TRUE, 0.0, Tavleen Kour, 30-Sep-2020, 10005.0, 1.0, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.validateHomePageTitleTest()'><b>validateHomePageTitleTest</b><br>Test class: com.qa.insurance.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
+<tr>
+<td title='com.qa.insurance.testcases.HomePageTest.validateSimulateButton()'><b>validateSimulateButton</b><br>Test class: com.qa.insurance.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.insurance.testcases.HomePageTest@43015c69</td></tr>
 </table><p>
 </body>
 </html>

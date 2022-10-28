@@ -19,9 +19,11 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.insurance.util.ScreenshotUtil;
 
+
+// ********* Implement extent reports using ITestListner interface *********
 public class ExtentReportListener implements ITestListener  
 {
-
+	
 		private static final String OUTPUT_FOLDER = "./build/";
 		private static final String FILE_NAME = "TestExecutionReport.html";
 		private static ExtentReports extent = init();
@@ -45,8 +47,8 @@ public class ExtentReportListener implements ITestListener
 			ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
 			htmlReporter.config().setDocumentTitle("Automation Test Results");
 			htmlReporter.config().setReportName("Automation Test Results");
-		//	htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-			htmlReporter.config().setTheme(Theme.STANDARD);
+			htmlReporter.config().setCSS(".r-img { width: 30%; }");
+			htmlReporter.config().setTheme(Theme.DARK);
 
 			extent = new ExtentReports();
 			extent.attachReporter(htmlReporter);
@@ -55,24 +57,24 @@ public class ExtentReportListener implements ITestListener
 			return extent;
 		}
 
-		public synchronized void onStart(ITestContext context) {
-			System.out.println("Test Suite started!");
+		public synchronized void onStart(ITestContext context) 
+		{
+
 		}
 
-		public synchronized void onFinish(ITestContext context) {
-			System.out.println(("Test Suite is ending!"));
+		public synchronized void onFinish(ITestContext context) 
+		{
 			extent.flush();
 			test.remove();
 		}
 
-		public synchronized void onTestStart(ITestResult result) {
-			String methodName = result.getMethod().getMethodName();
+		public synchronized void onTestStart(ITestResult result) 
+		{
 			String qualifiedName = result.getMethod().getQualifiedName();
 			int last = qualifiedName.lastIndexOf(".");
 			int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 			String className = qualifiedName.substring(mid + 1, last);
 
-			System.out.println(methodName + " started!");
 			ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(), 
 					result.getMethod().getDescription());
 
@@ -82,28 +84,36 @@ public class ExtentReportListener implements ITestListener
 			test.get().getModel().setStartTime(getTime(result.getStartMillis()));
 		}
 
-		public synchronized void onTestSuccess(ITestResult result) {
-			System.out.println((result.getMethod().getMethodName() + " passed!"));
+		public synchronized void onTestSuccess(ITestResult result) 
+		{
+			
 			test.get().pass("Test passed");
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 		}
 
-		public synchronized void onTestFailure(ITestResult result) {
-			System.out.println((result.getMethod().getMethodName() + " failed!"));
+		public synchronized void onTestFailure(ITestResult result) 
+		{
+			
 			try {
+				
+				// ******** Capturing screenshots for failed tests. ********
 				test.get().fail(result.getThrowable(),
-						MediaEntityBuilder.createScreenCaptureFromPath(ScreenshotUtil.takeScreenshotAtEndOfTest()).build());
+						MediaEntityBuilder.createScreenCaptureFromPath(ScreenshotUtil.takeScreenshotAtEndOfTest()).build()); 
 			} catch (IOException e) {
 				System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
 			}
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 		}
 
-		public synchronized void onTestSkipped(ITestResult result) {
-			System.out.println((result.getMethod().getMethodName() + " skipped!"));
+		public synchronized void onTestSkipped(ITestResult result) 
+		{
+			
 			try {
+				
+				// ******** Capturing screenshots for skipped tests. ********
 				test.get().skip(result.getThrowable(),
 						MediaEntityBuilder.createScreenCaptureFromPath(ScreenshotUtil.takeScreenshotAtEndOfTest()).build());
+			    
 			} catch (IOException e) {
 				System.err
 						.println("Exception thrown while updating test skip status " + Arrays.toString(e.getStackTrace()));
@@ -111,12 +121,15 @@ public class ExtentReportListener implements ITestListener
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 		}
 
-		public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-			System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+		public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) 
+		{
+			
 		}
 		
-
-		private Date getTime(long millis) {
+		
+		// ******* Get the current time milliseconds ******
+		private Date getTime(long millis) 
+		{
 			Calendar calendar = Calendar.getInstance();
 			calendar.setTimeInMillis(millis);
 			return calendar.getTime();

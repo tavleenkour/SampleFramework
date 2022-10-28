@@ -13,15 +13,13 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelUtil
 
 {
-	
-	
-	public static final String testData = (System.getProperty("user.dir")+ "/src/main/java/com/insurance"
-			+ "/qa/testdata/insurance_testdata.xlsx");
+	public static final String testData = (System.getProperty("user.dir")+ "/src/main/java/com/"
+			+ "/qa/insurance/testdata/insurance_testdata.xlsx");
 	public static Sheet sheet;
 	public static Workbook book;
 	
-
-			public static Object[][] getTestData(String sheetName) 
+	// ****** Utility to read data from an excel file. ********
+	public static Object[][] getTestData(String sheetName) 
 			
  	{
 				

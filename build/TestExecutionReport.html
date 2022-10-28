@@ -17,6 +17,7 @@
 	<style type='text/css'>
 		/* json-tree */
 		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			.r-img { width: 30%; }
 	</style>
 	
 	<script type="text/javascript">
@@ -24,7 +25,7 @@
 		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
 	</script>
 </head>
-	<body class='extent standard default hide-overflow '>
+	<body class='extent dark default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -45,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 27, 2022 03:23:00 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 27, 2022 11:24:39 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,7 +63,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -116,10 +116,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='55.556%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96%'><span class='strong'>48</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='22.222%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='22.222%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -139,15 +139,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>validateHomePageTitleTest</span>
-						<span class='test-time'>Oct 27, 2022 03:23:08 PM</span>
+						<span class='test-name'>validateSimulateButton</span>
+						<span class='test-time'>Oct 27, 2022 11:24:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:23:08 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:23:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+36ms</span>
+	<span class='label start-time'>Oct 27, 2022 11:24:47 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:24:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+218ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -167,7 +167,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:23:08 PM</td>
+				<td class='timestamp'>11:24:47 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -180,15 +180,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>validateSimulateButton</span>
-						<span class='test-time'>Oct 27, 2022 03:23:14 PM</span>
+						<span class='test-name'>validateHomePageTitleTest</span>
+						<span class='test-time'>Oct 27, 2022 11:24:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:23:14 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:23:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+221ms</span>
+	<span class='label start-time'>Oct 27, 2022 11:24:47 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:24:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+38ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -208,7 +208,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:23:14 PM</td>
+				<td class='timestamp'>11:24:47 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -222,14 +222,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:23:21 PM</span>
+						<span class='test-time'>Oct 27, 2022 11:24:48 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:23:21 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:23:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+351ms</span>
+	<span class='label start-time'>Oct 27, 2022 11:24:48 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:24:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+814ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -249,7 +249,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:23:27 PM</td>
+				<td class='timestamp'>11:24:54 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -260,413 +260,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:23:33 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:23:33 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:23:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+196ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
-		<span class='category label'>HomePageTest</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>3:23:50 PM</td>
-				<td class='step-details'>
-						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c03bf65d31a724644d4102c41d426d5, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53252/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c03bf65d31a724644d4102c41d426d5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot1.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot1.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot1.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:23:56 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:23:56 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:24:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+144ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
-		<span class='category label'>HomePageTest</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>3:24:11 PM</td>
-				<td class='step-details'>
-						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [845d42b8a831ac73c31ef3e4ccd68698, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53282/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 845d42b8a831ac73c31ef3e4ccd68698
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot2.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot2.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot2.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:24:17 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:24:17 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:24:33 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+381ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
-		<span class='category label'>HomePageTest</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>3:24:33 PM</td>
-				<td class='step-details'>
-						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [13ed81d851613028d97ddfe36b651895, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13ed81d851613028d97ddfe36b651895
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot3.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot3.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot3.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:24:39 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:24:39 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:24:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+179ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
-		<span class='category label'>HomePageTest</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>3:24:55 PM</td>
-				<td class='step-details'>
-						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066a107d676b905becbadbbe787b5f38, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 066a107d676b905becbadbbe787b5f38
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot4.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot4.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot4.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:25:01 PM</span>
+						<span class='test-time'>Oct 27, 2022 11:24:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:25:01 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:25:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+368ms</span>
+	<span class='label start-time'>Oct 27, 2022 11:24:54 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:24:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+935ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -686,7 +290,261 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:25:08 PM</td>
+				<td class='timestamp'>11:24:56 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:24:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:24:56 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:24:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+149ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:24:57 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:24:57 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:24:57 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+184ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:25:05 PM</td>
+				<td class='step-details'>
+						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
+  (Session info: chrome=107.0.5304.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_1.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_1.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_1.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:05 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:05 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+12ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:25:14 PM</td>
+				<td class='step-details'>
+						<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
+  (Session info: chrome=107.0.5304.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_2.png' src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_2.png' data-src='/Users/tavleenkour/eclipse-workspace/InsuranceTest/screenshots/Screenshot_2.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:14 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+21ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:15 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -700,14 +558,14 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>checkInsuranceValue</span>
-						<span class='test-time'>Oct 27, 2022 03:25:14 PM</span>
+						<span class='test-time'>Oct 27, 2022 11:25:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 27, 2022 03:25:14 PM</span>
-	<span class='label end-time'>Oct 27, 2022 03:25:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+234ms</span>
+	<span class='label start-time'>Oct 27, 2022 11:25:15 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+987ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -727,7 +585,1688 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:25:20 PM</td>
+				<td class='timestamp'>11:25:16 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:16 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+900ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:17 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:17 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+959ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:18 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:18 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+802ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:18 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:18 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+802ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:19 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:19 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+828ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:20 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:20 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+858ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:21 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:21 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+857ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:22 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:22 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+878ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:23 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:23 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+813ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:23 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:23 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+826ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:24 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:24 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+803ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:25 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:25 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+774ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:26 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:26 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+804ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:27 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:27 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+803ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:27 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:27 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+758ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:28 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:28 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+759ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:29 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:29 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+755ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:30 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:30 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+801ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:30 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:30 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+797ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:31 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:31 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+747ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:32 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:32 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+749ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:33 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:33 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+726ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:34 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:34 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+782ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:34 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:34 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+699ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:35 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:35 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+717ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:36 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:36 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+727ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:36 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:36 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+784ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:37 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:37 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+721ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:38 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:38 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:38 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+715ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:39 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:39 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+723ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:39 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:39 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+787ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:40 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:40 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+762ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:41 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:41 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+797ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:42 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:42 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+720ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:42 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:42 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+754ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:43 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:43 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+730ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:44 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:44 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+733ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:45 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:45 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+727ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:45 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:45 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+740ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:46 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:46 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+713ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:47 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>checkInsuranceValue</span>
+						<span class='test-time'>Oct 27, 2022 11:25:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 27, 2022 11:25:47 PM</span>
+	<span class='label end-time'>Oct 27, 2022 11:25:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+710ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>InsuranceSimulatorRegressionSuite</span>
+		<span class='category label'>HomePageTest</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:25:48 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -781,13 +2320,13 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 					<div class='category-heading'>
 						<span class='category-name'>InsuranceSimulatorRegressionSuite</span>
 						<span class='category-status right'>
-						<span class='label pass'>5</span>
+						<span class='label pass'>48</span>
 						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
+							<span class='label green accent-4 white-text'>Passed: 48</span>
 							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
@@ -802,48 +2341,253 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2022 03:23:08 PM</td>
-										<td class='linked' test-id='1'>validateHomePageTitleTest</td>
+										<td>Oct 27, 2022 11:24:47 PM</td>
+										<td class='linked' test-id='1'>validateSimulateButton</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:14 PM</td>
-										<td class='linked' test-id='2'>validateSimulateButton</td>
+										<td>Oct 27, 2022 11:24:47 PM</td>
+										<td class='linked' test-id='2'>validateHomePageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:21 PM</td>
+										<td>Oct 27, 2022 11:24:48 PM</td>
 										<td class='linked' test-id='3'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:33 PM</td>
+										<td>Oct 27, 2022 11:24:54 PM</td>
 										<td class='linked' test-id='4'>checkInsuranceValue</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:56 PM</td>
+										<td>Oct 27, 2022 11:24:56 PM</td>
 										<td class='linked' test-id='5'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:24:57 PM</td>
+										<td class='linked' test-id='6'>checkInsuranceValue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:24:17 PM</td>
-										<td class='linked' test-id='6'>checkInsuranceValue</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Oct 27, 2022 03:24:39 PM</td>
+										<td>Oct 27, 2022 11:25:05 PM</td>
 										<td class='linked' test-id='7'>checkInsuranceValue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:25:01 PM</td>
+										<td>Oct 27, 2022 11:25:14 PM</td>
 										<td class='linked' test-id='8'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:25:14 PM</td>
+										<td>Oct 27, 2022 11:25:15 PM</td>
 										<td class='linked' test-id='9'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:16 PM</td>
+										<td class='linked' test-id='10'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:17 PM</td>
+										<td class='linked' test-id='11'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:18 PM</td>
+										<td class='linked' test-id='12'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:18 PM</td>
+										<td class='linked' test-id='13'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:19 PM</td>
+										<td class='linked' test-id='14'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:20 PM</td>
+										<td class='linked' test-id='15'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:21 PM</td>
+										<td class='linked' test-id='16'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:22 PM</td>
+										<td class='linked' test-id='17'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:23 PM</td>
+										<td class='linked' test-id='18'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:23 PM</td>
+										<td class='linked' test-id='19'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:24 PM</td>
+										<td class='linked' test-id='20'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:25 PM</td>
+										<td class='linked' test-id='21'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:26 PM</td>
+										<td class='linked' test-id='22'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:27 PM</td>
+										<td class='linked' test-id='23'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:27 PM</td>
+										<td class='linked' test-id='24'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:28 PM</td>
+										<td class='linked' test-id='25'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:29 PM</td>
+										<td class='linked' test-id='26'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:30 PM</td>
+										<td class='linked' test-id='27'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:30 PM</td>
+										<td class='linked' test-id='28'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:31 PM</td>
+										<td class='linked' test-id='29'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:32 PM</td>
+										<td class='linked' test-id='30'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:33 PM</td>
+										<td class='linked' test-id='31'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:34 PM</td>
+										<td class='linked' test-id='32'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:34 PM</td>
+										<td class='linked' test-id='33'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:35 PM</td>
+										<td class='linked' test-id='34'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:36 PM</td>
+										<td class='linked' test-id='35'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:36 PM</td>
+										<td class='linked' test-id='36'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:37 PM</td>
+										<td class='linked' test-id='37'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:38 PM</td>
+										<td class='linked' test-id='38'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:39 PM</td>
+										<td class='linked' test-id='39'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:39 PM</td>
+										<td class='linked' test-id='40'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:40 PM</td>
+										<td class='linked' test-id='41'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:41 PM</td>
+										<td class='linked' test-id='42'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:42 PM</td>
+										<td class='linked' test-id='43'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:42 PM</td>
+										<td class='linked' test-id='44'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:43 PM</td>
+										<td class='linked' test-id='45'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:44 PM</td>
+										<td class='linked' test-id='46'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:45 PM</td>
+										<td class='linked' test-id='47'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:45 PM</td>
+										<td class='linked' test-id='48'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:46 PM</td>
+										<td class='linked' test-id='49'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:47 PM</td>
+										<td class='linked' test-id='50'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -855,13 +2599,13 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 					<div class='category-heading'>
 						<span class='category-name'>HomePageTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>5</span>
+						<span class='label pass'>48</span>
 						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
+							<span class='label green accent-4 white-text'>Passed: 48</span>
 							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
@@ -876,48 +2620,253 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2022 03:23:08 PM</td>
-										<td class='linked' test-id='1'>validateHomePageTitleTest</td>
+										<td>Oct 27, 2022 11:24:47 PM</td>
+										<td class='linked' test-id='1'>validateSimulateButton</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:14 PM</td>
-										<td class='linked' test-id='2'>validateSimulateButton</td>
+										<td>Oct 27, 2022 11:24:47 PM</td>
+										<td class='linked' test-id='2'>validateHomePageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:21 PM</td>
+										<td>Oct 27, 2022 11:24:48 PM</td>
 										<td class='linked' test-id='3'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:33 PM</td>
+										<td>Oct 27, 2022 11:24:54 PM</td>
 										<td class='linked' test-id='4'>checkInsuranceValue</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:23:56 PM</td>
+										<td>Oct 27, 2022 11:24:56 PM</td>
 										<td class='linked' test-id='5'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:24:57 PM</td>
+										<td class='linked' test-id='6'>checkInsuranceValue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:24:17 PM</td>
-										<td class='linked' test-id='6'>checkInsuranceValue</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Oct 27, 2022 03:24:39 PM</td>
+										<td>Oct 27, 2022 11:25:05 PM</td>
 										<td class='linked' test-id='7'>checkInsuranceValue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:25:01 PM</td>
+										<td>Oct 27, 2022 11:25:14 PM</td>
 										<td class='linked' test-id='8'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:25:14 PM</td>
+										<td>Oct 27, 2022 11:25:15 PM</td>
 										<td class='linked' test-id='9'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:16 PM</td>
+										<td class='linked' test-id='10'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:17 PM</td>
+										<td class='linked' test-id='11'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:18 PM</td>
+										<td class='linked' test-id='12'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:18 PM</td>
+										<td class='linked' test-id='13'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:19 PM</td>
+										<td class='linked' test-id='14'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:20 PM</td>
+										<td class='linked' test-id='15'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:21 PM</td>
+										<td class='linked' test-id='16'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:22 PM</td>
+										<td class='linked' test-id='17'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:23 PM</td>
+										<td class='linked' test-id='18'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:23 PM</td>
+										<td class='linked' test-id='19'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:24 PM</td>
+										<td class='linked' test-id='20'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:25 PM</td>
+										<td class='linked' test-id='21'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:26 PM</td>
+										<td class='linked' test-id='22'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:27 PM</td>
+										<td class='linked' test-id='23'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:27 PM</td>
+										<td class='linked' test-id='24'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:28 PM</td>
+										<td class='linked' test-id='25'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:29 PM</td>
+										<td class='linked' test-id='26'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:30 PM</td>
+										<td class='linked' test-id='27'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:30 PM</td>
+										<td class='linked' test-id='28'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:31 PM</td>
+										<td class='linked' test-id='29'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:32 PM</td>
+										<td class='linked' test-id='30'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:33 PM</td>
+										<td class='linked' test-id='31'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:34 PM</td>
+										<td class='linked' test-id='32'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:34 PM</td>
+										<td class='linked' test-id='33'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:35 PM</td>
+										<td class='linked' test-id='34'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:36 PM</td>
+										<td class='linked' test-id='35'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:36 PM</td>
+										<td class='linked' test-id='36'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:37 PM</td>
+										<td class='linked' test-id='37'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:38 PM</td>
+										<td class='linked' test-id='38'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:39 PM</td>
+										<td class='linked' test-id='39'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:39 PM</td>
+										<td class='linked' test-id='40'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:40 PM</td>
+										<td class='linked' test-id='41'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:41 PM</td>
+										<td class='linked' test-id='42'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:42 PM</td>
+										<td class='linked' test-id='43'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:42 PM</td>
+										<td class='linked' test-id='44'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:43 PM</td>
+										<td class='linked' test-id='45'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:44 PM</td>
+										<td class='linked' test-id='46'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:45 PM</td>
+										<td class='linked' test-id='47'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:45 PM</td>
+										<td class='linked' test-id='48'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:46 PM</td>
+										<td class='linked' test-id='49'>checkInsuranceValue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 27, 2022 11:25:47 PM</td>
+										<td class='linked' test-id='50'>checkInsuranceValue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -955,7 +2904,7 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -969,137 +2918,7 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2022 03:23:33 PM</td>
-										<td class='linked' test-id='4'>checkInsuranceValue</td>
-										<td>
-											<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c03bf65d31a724644d4102c41d426d5, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53252/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c03bf65d31a724644d4102c41d426d5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-										</td>
-									</tr>
-									<tr>
-										<td>Oct 27, 2022 03:23:56 PM</td>
-										<td class='linked' test-id='5'>checkInsuranceValue</td>
-										<td>
-											<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [845d42b8a831ac73c31ef3e4ccd68698, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53282/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 845d42b8a831ac73c31ef3e4ccd68698
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre>
-										</td>
-									</tr>
-									<tr>
-										<td>Oct 27, 2022 03:24:17 PM</td>
+										<td>Oct 27, 2022 11:24:57 PM</td>
 										<td class='linked' test-id='6'>checkInsuranceValue</td>
 										<td>
 											<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
@@ -1108,9 +2927,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [13ed81d851613028d97ddfe36b651895, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13ed81d851613028d97ddfe36b651895
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1129,9 +2948,9 @@ Session ID: 13ed81d851613028d97ddfe36b651895
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1144,27 +2963,14 @@ Session ID: 13ed81d851613028d97ddfe36b651895
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre>
 										</td>
 									</tr>
 									<tr>
-										<td>Oct 27, 2022 03:24:39 PM</td>
+										<td>Oct 27, 2022 11:25:05 PM</td>
 										<td class='linked' test-id='7'>checkInsuranceValue</td>
 										<td>
 											<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fee"]"}
@@ -1173,9 +2979,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'Tavleens-MacBook-Pro.local', ip: 'fe80:0:0:0:4b:2dac:128e:9009%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066a107d676b905becbadbbe787b5f38, findElement {using=xpath, value=//*[@id="fee"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 066a107d676b905becbadbbe787b5f38
+Command: [3c81d4f155c13ce1856c022c6c4dc8cc, findElement {using=xpath, value=//*[@id="fee"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/2c/znlm_n9j0jb...}, goog:chromeOptions: {debuggerAddress: localhost:65211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65211/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c81d4f155c13ce1856c022c6c4dc8cc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1194,37 +3000,24 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at com.insurance.qa.pages.HomePage.getInfo(HomePage.java:172)
-	at com.insurance.qa.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:83)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.qa.insurance.pages.HomePage.getInfo(HomePage.java:181)
+	at com.qa.insurance.testcases.HomePageTest.checkInsuranceValue(HomePageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre>
 										</td>
 									</tr>
@@ -1250,7 +3043,7 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>50</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1262,13 +3055,13 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 27, 2022 03:23:00 PM</div>
+					<div class='panel-lead'>Oct 27, 2022 11:24:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 27, 2022 03:23:00 PM</div>
+			 		<div class='panel-lead'>Oct 27, 2022 11:24:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1291,20 +3084,20 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 						</tr>
 						<tr>
 							<td>InsuranceSimulatorRegressionSuite</td>
-							<td>5</td>
+							<td>48</td>
 							<td>2</td>
 							<td>0</td>
 							<td>
-									55.556%
+									96%
 							</td>
 						</tr>
 						<tr>
 							<td>HomePageTest</td>
-							<td>5</td>
+							<td>48</td>
 							<td>2</td>
 							<td>0</td>
 							<td>
-									55.556%
+									96%
 							</td>
 						</tr>
 					</table>
@@ -1318,13 +3111,13 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 5,
+				passParent: 48,
 				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 2,
-				exceptionsParent: 4,
+				skipParent: 0,
+				exceptionsParent: 2,
 				
 				passChild: 0,
 				failChild: 0,
@@ -1349,7 +3142,7 @@ Session ID: 066a107d676b905becbadbbe787b5f38
 		</script>
 		<script>
 			var timeline = {
-			        "validateHomePageTitleTest":0.036,"validateSimulateButton":0.221,"checkInsuranceValue":6.351,"checkInsuranceValue":16.196,"checkInsuranceValue":15.144,"checkInsuranceValue":15.381,"checkInsuranceValue":16.179,"checkInsuranceValue":6.368,"checkInsuranceValue":6.234
+			        "validateSimulateButton":0.218,"validateHomePageTitleTest":0.038,"checkInsuranceValue":5.814,"checkInsuranceValue":1.935,"checkInsuranceValue":1.149,"checkInsuranceValue":8.184,"checkInsuranceValue":8.012,"checkInsuranceValue":1.021,"checkInsuranceValue":0.987,"checkInsuranceValue":0.9,"checkInsuranceValue":0.959,"checkInsuranceValue":0.802,"checkInsuranceValue":0.802,"checkInsuranceValue":0.828,"checkInsuranceValue":0.858,"checkInsuranceValue":0.857,"checkInsuranceValue":0.878,"checkInsuranceValue":0.813,"checkInsuranceValue":0.826,"checkInsuranceValue":0.803,"checkInsuranceValue":0.774,"checkInsuranceValue":0.804,"checkInsuranceValue":0.803,"checkInsuranceValue":0.758,"checkInsuranceValue":0.759,"checkInsuranceValue":0.755,"checkInsuranceValue":0.801,"checkInsuranceValue":0.797,"checkInsuranceValue":0.747,"checkInsuranceValue":0.749,"checkInsuranceValue":0.726,"checkInsuranceValue":0.782,"checkInsuranceValue":0.699,"checkInsuranceValue":0.717,"checkInsuranceValue":0.727,"checkInsuranceValue":0.784,"checkInsuranceValue":0.721,"checkInsuranceValue":0.715,"checkInsuranceValue":0.723,"checkInsuranceValue":0.787,"checkInsuranceValue":0.762,"checkInsuranceValue":0.797,"checkInsuranceValue":0.72,"checkInsuranceValue":0.754,"checkInsuranceValue":0.73,"checkInsuranceValue":0.733,"checkInsuranceValue":0.727,"checkInsuranceValue":0.74,"checkInsuranceValue":0.713,"checkInsuranceValue":0.71
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>

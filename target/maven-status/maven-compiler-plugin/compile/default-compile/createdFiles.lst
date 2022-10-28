@@ -1,3 +1,10 @@
-com/insurance/qa/util/TestUtil.class
-com/insurance/qa/base/TestBase.class
-com/insurance/qa/util/ExcelUtil.class
+com/qa/insurance/util/ExcelUtil.class
+com/qa/insurance/locators/HomePageLocators.class
+com/qa/insurance/listeners/ExtentReportListener.class
+com/qa/insurance/listeners/AnnotationTransformer.class
+com/qa/insurance/pages/HomePage.class
+com/qa/insurance/listeners/Retry.class
+com/qa/insurance/base/TestBase.class
+com/qa/insurance/util/TestUtil.class
+com/qa/insurance/util/CalenderUtil.class
+com/qa/insurance/util/ScreenshotUtil.class

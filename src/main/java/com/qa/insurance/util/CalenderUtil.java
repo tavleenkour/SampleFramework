@@ -12,6 +12,7 @@ public class CalenderUtil extends TestBase {
 	
 	static Date date;
 	
+	// ******* Utility to update format for a date-picker **********
 	public static String Calender(String input, String output, String issue_date)
 	{
 			DateFormat inputFormat = new SimpleDateFormat(input);
