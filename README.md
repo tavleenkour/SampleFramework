@@ -32,7 +32,7 @@ The project is created with:
 
 
 ## Setup
-This repository can be cloned to your local machine using the following commands:
+This repository can be cloned to a local machine using the following commands:
 * HTTPS: 
 ``` https://github.com/tavleenkour/SampleFramework.git ``` 
 
@@ -42,5 +42,5 @@ This repository can be cloned to your local machine using the following commands
 
 ## Launch
 To run this project:
-* Import the project to eclipse from local machine
+* Import the project to eclipse(or another similar IDE) from local machine
 * Run the testng.xml file as `TestNG Suite`
